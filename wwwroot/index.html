@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Management Agent - ServiceNow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            display: flex;
+            flex-direction: column;
+            color: #e2e8f0;
+        }
+
+        /* ===== HEADER (Fixed) ===== */
+        .header {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 1.25rem 2rem;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #3b82f6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0;
+        }
+
+        .header h1 span {
+            font-size: 1.8rem;
+        }
+
+        .header-subtitle {
+            color: #94a3b8;
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .status-badge {
+            background: rgba(59, 130, 246, 0.2);
+            padding: 0.4rem 0.875rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            font-size: 0.75rem;
+            color: #93c5fd;
+        }
+
+        .clear-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #94a3b8;
+            padding: 0.6rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .clear-btn:hover {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+        }
+
+        /* ===== MAIN CONTENT AREA ===== */
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* ===== CHAT SECTION ===== */
+        .chat-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 1rem;
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 1.5rem;
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 0.875rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(59, 130, 246, 0.4) transparent;
+        }
+
+        .chat-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb {
+            background: rgba(59, 130, 246, 0.4);
+            border-radius: 4px;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(59, 130, 246, 0.6);
+        }
+
+        .message {
+            display: flex;
+            gap: 1rem;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user {
+            flex-direction: row-reverse;
+        }
+
+        .avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .message.assistant .avatar {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+
+        .message.user .avatar {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .message-content {
+            max-width: 65%;
+            padding: 1rem;
+            border-radius: 1rem;
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
+
+        .message.assistant .message-content {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid #3b82f6;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            color: #fff;
+            border-bottom-right-radius: 0.25rem;
+        }
+
+        .tools-used {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 0.75rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tool-badge {
+            background: rgba(59, 130, 246, 0.3);
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.25rem;
+            font-size: 0.65rem;
+            color: #93c5fd;
+        }
+
+        .next-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .next-action-btn {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(30, 144, 255, 0.2) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            color: #93c5fd;
+            padding: 0.5rem 0.875rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .next-action-btn:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.4) 0%, rgba(30, 144, 255, 0.4) 100%);
+            transform: translateY(-2px);
+        }
+
+        .welcome-message {
+            text-align: center;
+            padding: 2rem;
+            color: #cbd5e1;
+        }
+
+        .welcome-message h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #93c5fd;
+        }
+
+        .welcome-message p {
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(59, 130, 246, 0.4) transparent;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: rgba(59, 130, 246, 0.4);
+            border-radius: 3px;
+        }
+
+        .sidebar-panel {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .panel-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #93c5fd;
+            font-size: 0.95rem;
+        }
+
+        .incident-action {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .incident-action:last-child {
+            margin-bottom: 0;
+        }
+
+        .incident-btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            border: none;
+            color: #fff;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .incident-btn:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+
+        .incident-btn.urgent {
+            background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%);
+        }
+
+        .incident-btn.high {
+            background: linear-gradient(135deg, #f97316 0%, #92400e 100%);
+        }
+
+        .quick-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .stat-box {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-top: 0.25rem;
+        }
+
+        /* ===== INPUT AREA (Fixed at bottom) ===== */
+        .input-footer {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 1rem 2rem;
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+            flex-shrink: 0;
+        }
+
+        .input-content {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 0.75rem;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        #messageInput {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #e2e8f0;
+            font-size: 1rem;
+            padding: 0.5rem;
+            outline: none;
+            resize: none;
+            max-height: 100px;
+        }
+
+        #messageInput::placeholder {
+            color: #64748b;
+        }
+
+        #sendBtn {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.2s;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        #sendBtn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+
+        #sendBtn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 0.75rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .typing-indicator.show {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .typing-dots span {
+            width: 6px;
+            height: 6px;
+            background: #3b82f6;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .typing-dots span:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+
+        /* ===== INCIDENT ITEMS ===== */
+        .incident-item {
+            background: rgba(59, 130, 246, 0.15);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border-left: 3px solid #3b82f6;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .incident-item:hover {
+            background: rgba(59, 130, 246, 0.25);
+            transform: translateX(4px);
+        }
+
+        .incident-item.critical {
+            border-left-color: #ef4444;
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .incident-item.critical:hover {
+            background: rgba(239, 68, 68, 0.2);
+        }
+
+        .incident-item.high {
+            border-left-color: #f97316;
+            background: rgba(249, 115, 22, 0.1);
+        }
+
+        .incident-item.high:hover {
+            background: rgba(249, 115, 22, 0.2);
+        }
+
+        .incident-item.medium {
+            border-left-color: #f59e0b;
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .incident-item.medium:hover {
+            background: rgba(245, 158, 11, 0.2);
+        }
+
+        .incident-item.low {
+            border-left-color: #22c55e;
+            background: rgba(34, 197, 94, 0.1);
+        }
+
+        .incident-item.low:hover {
+            background: rgba(34, 197, 94, 0.2);
+        }
+
+        .incident-icon {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .incident-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .incident-id {
+            font-weight: 700;
+            color: #93c5fd;
+            font-size: 0.9rem;
+        }
+
+        .incident-title {
+            color: #e2e8f0;
+            font-size: 0.85rem;
+        }
+
+        .incident-meta {
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+
+        /* ===== INCIDENT DETAIL ACTIONS ===== */
+        .incident-detail-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .incident-detail-actions-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .incident-detail-actions-label {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .incident-detail-action-btn {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(30, 144, 255, 0.2) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            color: #93c5fd;
+            padding: 0.65rem 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .incident-detail-action-btn:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.4) 0%, rgba(30, 144, 255, 0.4) 100%);
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+        }
+
+        .incident-detail-action-btn.urgent {
+            border-color: rgba(239, 68, 68, 0.4);
+            color: #fca5a5;
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%);
+        }
+
+        .incident-detail-action-btn.urgent:hover {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.4) 0%, rgba(220, 38, 38, 0.4) 100%);
+        }
+
+        .incident-detail-action-btn.success {
+            border-color: rgba(34, 197, 94, 0.4);
+            color: #86efac;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(22, 163, 74, 0.2) 100%);
+        }
+
+        .incident-detail-action-btn.success:hover {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.4) 0%, rgba(22, 163, 74, 0.4) 100%);
+        }
+
+        .incident-detail-action-btn.warning {
+            border-color: rgba(245, 158, 11, 0.4);
+            color: #fcd34d;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(217, 119, 6, 0.2) 100%);
+        }
+
+        .incident-detail-action-btn.warning:hover {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.4) 0%, rgba(217, 119, 6, 0.4) 100%);
+        }
+
+        .incident-detail-action-icon {
+            font-size: 1rem;
+        }
+
+        /* ===== MEDIA QUERIES ===== */
+        @media (max-width: 1024px) {
+            .main-wrapper {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                max-height: 200px;
+                border-top: 1px solid rgba(59, 130, 246, 0.2);
+            }
+
+            .message-content {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem 1.5rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .message-content {
+                max-width: 90%;
+            }
+
+            .chat-section {
+                padding: 0.75rem;
+            }
+
+            .incident-detail-actions {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .incident-detail-action-btn {
+                flex: 1;
+                min-width: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- FIXED HEADER -->
+    <div class="header">
+        <div class="header-content">
+            <div class="header-title">
+                <div>
+                    <h1><span>🔔</span> Incident Management Agent</h1>
+                    <div class="header-subtitle">AI-Powered Incident Management | Real-time Updates</div>
+                </div>
+            </div>
+            <div class="header-actions">
+                <span class="status-badge" id="sessionBadge">Session: —</span>
+                <button class="clear-btn" onclick="clearChat()">🗑️ Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-wrapper">
+        <!-- CHAT SECTION -->
+        <div class="chat-section">
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-message">
+                    <h2>👋 Welcome to Incident Management</h2>
+                    <p>Your AI assistant for intelligent incident management</p>
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border-radius: 0.75rem; border: 1px solid rgba(59, 130, 246, 0.2);">
+                        <p style="font-size: 0.85rem; margin-bottom: 0.75rem; color: #93c5fd;"><strong>📝 Try these commands:</strong></p>
+                        <ul style="text-align: left; font-size: 0.8rem; color: #cbd5e1; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                            <li>📋 Show open incidents</li>
+                            <li>🔴 Show critical incidents</li>
+                            <li>✅ Show resolved incidents</li>
+                            <li>📊 Analyze incidents</li>
+                            <li>➕ Create new incident</li>
+                            <li>🔍 Find similar incidents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Processing...</span>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <!-- Quick Actions -->
+            <div class="sidebar-panel">
+                <div class="panel-title">🎯 Quick Actions</div>
+                <div class="incident-action">
+                    <button class="incident-btn" onclick="sendQuickMessage('Show open incidents')">
+                        📋 View Open
+                    </button>
+                </div>
+                <div class="incident-action">
+                    <button class="incident-btn urgent" onclick="sendQuickMessage('Show critical incidents')">
+                        🔴 Critical Only
+                    </button>
+                </div>
+                <div class="incident-action">
+                    <button class="incident-btn high" onclick="sendQuickMessage('Show high priority incidents')">
+                        🟠 High Priority
+                    </button>
+                </div>
+                <div class="incident-action">
+                    <button class="incident-btn" onclick="sendQuickMessage('Show resolved incidents')">
+                        ✅ Resolved
+                    </button>
+                </div>
+                <div class="incident-action">
+                    <button class="incident-btn" onclick="sendQuickMessage('Analyze incidents')">
+                        📊 Analytics
+                    </button>
+                </div>
+                <div class="incident-action">
+                    <button class="incident-btn" onclick="showCreateIncidentPrompt()">
+                        ➕ Create New
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Panel -->
+            <div class="sidebar-panel">
+                <div class="panel-title">📈 Quick Stats</div>
+                <div class="quick-stats">
+                    <div class="stat-box">
+                        <div class="stat-number" id="openCount">—</div>
+                        <div class="stat-label">Open</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" id="resolvedCount">—</div>
+                        <div class="stat-label">Resolved</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Panel -->
+            <div class="sidebar-panel">
+                <div class="panel-title">ℹ️ About</div>
+                <p style="font-size: 0.8rem; color: #94a3b8; line-height: 1.5;">
+                    AI-powered incident management system with real-time updates, smart analytics, and intelligent recommendations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIXED INPUT FOOTER -->
+    <div class="input-footer">
+        <div class="input-content">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="Type your command (e.g., 'Show open incidents')..." autocomplete="off">
+                <button id="sendBtn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sessionId = localStorage.getItem('chatSessionId') || generateSessionId();
+        localStorage.setItem('chatSessionId', sessionId);
+        document.getElementById('sessionBadge').textContent = 'Session: ' + sessionId.substring(0, 8).toUpperCase();
+
+        let selectedIncidents = [];
+
+        function generateSessionId() {
+            return 'session_' + Math.random().toString(36).substring(2, 15);
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function escapeAttr(text) {
+            return text.replace(/'/g, "\\'").replace(/"/g, '\\"');
+        }
+
+        function formatMessage(text) {
+            let formatted = escapeHtml(text);
+            formatted = formatted.replace(/```(\w*)\n?([\s\S]*?)```/g, '<pre><code>$2</code></pre>');
+            formatted = formatted.replace(/`([^`]+)`/g, '<code>$1</code>');
+            formatted = formatted.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            formatted = formatted.replace(/\n/g, '<br>');
+            return formatted;
+        }
+
+        function createIncidentElement(incident) {
+            const div = document.createElement('div');
+            div.className = `incident-item ${incident.priority}`;
+            
+            const priorityIcon = incident.priority === 'critical' ? '🔴' : 
+                               incident.priority === 'high' ? '🟠' :
+                               incident.priority === 'medium' ? '🟡' : '🟢';
+            const statusIcon = incident.status === 'Open' ? '📌' : 
+                             incident.status === 'Resolved' ? '✅' : '⚙️';
+
+            div.innerHTML = `
+                <div class="incident-icon">${statusIcon} ${priorityIcon}</div>
+                <div class="incident-info">
+                    <div class="incident-id">${incident.id}</div>
+                    <div class="incident-title">${escapeHtml(incident.title)}</div>
+                    <div class="incident-meta">${escapeHtml(incident.category)} • ${escapeHtml(incident.assignedTo)}</div>
+                </div>
+            `;
+            
+            div.onclick = (e) => {
+                e.stopPropagation();
+                sendQuickMessage(`Show incident details ${incident.id}`);
+            };
+            
+            return div;
+        }
+
+        function addMessage(content, role, toolsUsed = [], nextActions = [], incidents = []) {
+            const chatContainer = document.getElementById('chatContainer');
+            const welcomeMessage = chatContainer.querySelector('.welcome-message');
+            if (welcomeMessage) {
+                welcomeMessage.remove();
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+
+            let toolsHtml = '';
+            let nextActionsHtml = '';
+
+            if (toolsUsed && toolsUsed.length > 0) {
+                toolsHtml = `<div class="tools-used">Tool: ${toolsUsed.map(t => `<span class="tool-badge">${escapeHtml(t)}</span>`).join('')}</div>`;
+            }
+
+            if (incidents && incidents.length > 0) {
+                selectedIncidents = incidents;
+            }
+
+            if (nextActions && nextActions.length > 0 && role === 'assistant') {
+                nextActionsHtml = `
+                    <div class="next-actions">
+                        ${nextActions.map(action => `<button class="next-action-btn" onclick="sendQuickMessage('${escapeAttr(action)}')">${escapeHtml(action)}</button>`).join('')}
+                    </div>
+                `;
+            }
+
+            const messageContent = document.createElement('div');
+            messageContent.className = 'message-content';
+            
+            messageContent.innerHTML = `
+                ${formatMessage(content)}
+                ${toolsHtml}
+                ${nextActionsHtml}
+            `;
+            
+            messageDiv.appendChild(messageContent);
+            chatContainer.appendChild(messageDiv);
+
+            if (incidents && incidents.length > 0) {
+                const incidentsContainer = document.createElement('div');
+                incidentsContainer.style.marginTop = '1rem';
+                incidents.forEach(incident => {
+                    incidentsContainer.appendChild(createIncidentElement(incident));
+                });
+                messageDiv.appendChild(incidentsContainer);
+
+                if (incidents.length === 1 && content.includes('Incident Details')) {
+                    const actionButtons = createIncidentActionButtons(incidents[0]);
+                    messageDiv.appendChild(actionButtons);
+                }
+            }
+
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function sendQuickMessage(message) {
+            document.getElementById('messageInput').value = message;
+            sendMessage();
+        }
+
+        function createIncidentActionButtons(incident) {
+            const actionsContainer = document.createElement('div');
+            actionsContainer.className = 'incident-detail-actions';
+
+            const relevantGroup = document.createElement('div');
+            relevantGroup.className = 'incident-detail-actions-group';
+            
+            const relevantLabel = document.createElement('div');
+            relevantLabel.className = 'incident-detail-actions-label';
+            relevantLabel.textContent = '🎯 Relevant Actions';
+            relevantGroup.appendChild(relevantLabel);
+
+            const relevantActions = getRelevantActions(incident);
+            relevantActions.forEach(action => {
+                const btn = document.createElement('button');
+                btn.className = `incident-detail-action-btn ${action.class || ''}`;
+                btn.innerHTML = `<span class="incident-detail-action-icon">${action.icon}</span> ${action.text}`;
+                btn.onclick = () => sendQuickMessage(action.command);
+                relevantGroup.appendChild(btn);
+            });
+
+            actionsContainer.appendChild(relevantGroup);
+
+            const nextGroup = document.createElement('div');
+            nextGroup.className = 'incident-detail-actions-group';
+            nextGroup.style.marginTop = '1rem';
+            
+            const nextLabel = document.createElement('div');
+            nextLabel.className = 'incident-detail-actions-label';
+            nextLabel.textContent = '';
+            nextGroup.appendChild(nextLabel);
+
+            const nextActions = getNextSteps(incident);
+            nextActions.forEach(action => {
+                const btn = document.createElement('button');
+                btn.className = `incident-detail-action-btn ${action.class || ''}`;
+                btn.innerHTML = `<span class="incident-detail-action-icon">${action.icon}</span> ${action.text}`;
+                btn.onclick = () => sendQuickMessage(action.command);
+                nextGroup.appendChild(btn);
+            });
+
+            actionsContainer.appendChild(nextGroup);
+
+            const navGroup = document.createElement('div');
+            navGroup.className = 'incident-detail-actions-group';
+            navGroup.style.marginTop = '1rem';
+            
+            const navLabel = document.createElement('div');
+            navLabel.className = 'incident-detail-actions-label';
+            navLabel.textContent = '';
+            navGroup.appendChild(navLabel);
+
+            const navActions = [
+                { icon: '📋', text: 'Back to Incidents', command: 'Show open incidents', class: '' },
+                { icon: '🗑️', text: 'Clear Chat', command: 'clearChat', class: '' }
+            ];
+
+            navActions.forEach(action => {
+                const btn = document.createElement('button');
+                btn.className = `incident-detail-action-btn ${action.class}`;
+                btn.innerHTML = `<span class="incident-detail-action-icon">${action.icon}</span> ${action.text}`;
+                if (action.command === 'clearChat') {
+                    btn.onclick = clearChat;
+                } else {
+                    btn.onclick = () => sendQuickMessage(action.command);
+                }
+                navGroup.appendChild(btn);
+            });
+
+            actionsContainer.appendChild(navGroup);
+
+            return actionsContainer;
+        }
+
+        function getRelevantActions(incident) {
+            const actions = [];
+
+            if (!incident) return actions;
+
+            // Status-based actions
+            if (incident.status === 'Open') {
+                actions.push({
+                    icon: '👤',
+                    text: 'Assign to Team Member',
+                    command: `Assign incident ${incident.id}`,
+                    class: ''
+                });
+                actions.push({
+                    icon: '⚙️',
+                    text: 'Update Status to In Progress',
+                    command: `Update incident ${incident.id} status to In Progress`,
+                    class: 'warning'
+                });
+                
+                if (incident.priority === 'critical') {
+                    actions.push({
+                        icon: '⬆️',
+                        text: 'Escalate to Management',
+                        command: `Escalate incident ${incident.id}`,
+                        class: 'urgent'
+                    });
+                }
+            } else if (incident.status === 'In Progress') {
+                actions.push({
+                    icon: '✅',
+                    text: 'Mark as Resolved',
+                    command: `Resolve incident ${incident.id}`,
+                    class: 'success'
+                });
+                actions.push({
+                    icon: '⏸️',
+                    text: 'Mark as On Hold',
+                    command: `Update incident ${incident.id} status to On Hold`,
+                    class: 'warning'
+                });
+                if (incident.priority === 'high' || incident.priority === 'critical') {
+                    actions.push({
+                        icon: '🔔',
+                        text: 'Notify Assignee',
+                        command: `Notify assignee for incident ${incident.id}`,
+                        class: ''
+                    });
+                }
+            } else if (incident.status === 'Resolved') {
+                actions.push({
+                    icon: '📄',
+                    text: 'View Resolution Details',
+                    command: `Show incident details ${incident.id}`,
+                    class: 'success'
+                });
+                actions.push({
+                    icon: '🔍',
+                    text: 'Find Similar Resolved Issues',
+                    command: `Find similar incidents to ${incident.id}`,
+                    class: ''
+                });
+            } else if (incident.status === 'On Hold') {
+                actions.push({
+                    icon: '▶️',
+                    text: 'Resume Incident',
+                    command: `Update incident ${incident.id} status to In Progress`,
+                    class: 'warning'
+                });
+                actions.push({
+                    icon: '👤',
+                    text: 'Change Assignment',
+                    command: `Assign incident ${incident.id}`,
+                    class: ''
+                });
+            }
+
+            return actions;
+        }
+
+        function getNextSteps(incident) {
+            const actions = [];
+
+            if (!incident) return actions;
+
+            // Priority-based suggestions
+            if (incident.priority === 'critical') {
+                actions.push({
+                    icon: '🚨',
+                    text: 'Add Priority Notice',
+                    command: `Add notice to incident ${incident.id}: This is a critical issue`,
+                    class: 'urgent'
+                });
+            }
+
+            // Category-based suggestions
+            if (incident.category === 'Database') {
+                actions.push({
+                    icon: '🔧',
+                    text: 'Check Database Logs',
+                    command: `Analyze database issue for incident ${incident.id}`,
+                    class: ''
+                });
+            } else if (incident.category === 'Network') {
+                actions.push({
+                    icon: '🔧',
+                    text: 'Network Diagnostics',
+                    command: `Analyze network issue for incident ${incident.id}`,
+                    class: ''
+                });
+            } else if (incident.category === 'Server') {
+                actions.push({
+                    icon: '🔧',
+                    text: 'Server Diagnostics',
+                    command: `Analyze server issue for incident ${incident.id}`,
+                    class: ''
+                });
+            }
+
+            // Generic next steps
+            actions.push({
+                icon: '📊',
+                text: 'View Related Incidents',
+                command: `Find similar incidents to ${incident.id}`,
+                class: ''
+            });
+
+            // Always offer ticket analysis
+            if (actions.length < 3) {
+                actions.push({
+                    icon: '🔍',
+                    text: 'Analyze This Incident',
+                    command: `Analyze incident ${incident.id}`,
+                    class: ''
+                });
+            }
+
+            return actions.slice(0, 3); // Return top 3 suggestions
+        }
+
+        function showCreateIncidentPrompt() {
+            const chatContainer = document.getElementById('chatContainer');
+            const welcomeMessage = chatContainer.querySelector('.welcome-message');
+            if (welcomeMessage) {
+                welcomeMessage.remove();
+            }
+
+            addMessage('Create a new incident', 'user');
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message assistant';
+            messageDiv.innerHTML = `
+                <div class="avatar">🤖</div>
+                <div class="message-content">
+                    <div class="input-prompt" style="background: rgba(59, 130, 246, 0.1); padding: 1rem; border-radius: 0.5rem; border: 1px solid rgba(59, 130, 246, 0.2);">
+                        <label style="display: block; color: #93c5fd; margin-bottom: 0.5rem; font-weight: 600;">Incident Title:</label>
+                        <input type="text" id="incidentTitle" placeholder="e.g., Database connection timeout" style="width: 100%; padding: 0.5rem; background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 0.5rem; color: #e2e8f0; margin-bottom: 0.75rem;" onkeypress="handleIncidentKey(event)">
+                        
+                        <label style="display: block; color: #93c5fd; margin-bottom: 0.5rem; font-weight: 600;">Priority:</label>
+                        <select id="incidentPriority" style="width: 100%; padding: 0.5rem; background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 0.5rem; color: #e2e8f0; margin-bottom: 0.75rem;">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                            <option value="critical">Critical</option>
+                        </select>
+                        
+                        <label style="display: block; color: #93c5fd; margin-bottom: 0.5rem; font-weight: 600;">Category:</label>
+                        <select id="incidentCategory" style="width: 100%; padding: 0.5rem; background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 0.5rem; color: #e2e8f0; margin-bottom: 1rem;">
+                            <option value="Other" selected>Other</option>
+                            <option value="Network">Network</option>
+                            <option value="Database">Database</option>
+                            <option value="Application">Application</option>
+                            <option value="Server">Server</option>
+                            <option value="Security">Security</option>
+                            <option value="Performance">Performance</option>
+                        </select>
+                        
+                        <button onclick="submitIncident()" style="width: 100%; padding: 0.7rem; background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); border: none; color: #fff; border-radius: 0.5rem; cursor: pointer; font-weight: 600;">Create Incident</button>
+                    </div>
+                </div>
+            `;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+            document.getElementById('incidentTitle').focus();
+        }
+
+        function handleIncidentKey(event) {
+            if (event.key === 'Enter') {
+                submitIncident();
+            }
+        }
+
+        function submitIncident() {
+            const title = document.getElementById('incidentTitle').value.trim();
+            const priority = document.getElementById('incidentPriority').value;
+            const category = document.getElementById('incidentCategory').value;
+
+            if (!title) {
+                alert('Please enter an incident title');
+                return;
+            }
+
+            const message = `Create incident: ${title} priority: ${priority} category: ${category}`;
+            sendQuickMessage(message);
+        }
+
+        function parseIncidentsFromResponse(response) {
+            if (response.incidents && Array.isArray(response.incidents)) {
+                return response.incidents;
+            }
+            return [];
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const sendBtn = document.getElementById('sendBtn');
+            const typingIndicator = document.getElementById('typingIndicator');
+
+            const message = input.value.trim();
+            if (!message) return;
+
+            addMessage(message, 'user');
+            input.value = '';
+
+            sendBtn.disabled = true;
+            input.disabled = true;
+            typingIndicator.classList.add('show');
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        sessionId: sessionId
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const incidents = parseIncidentsFromResponse(data);
+                addMessage(data.message, 'assistant', data.toolsUsed, data.nextActions, incidents);
+
+                if (data.sessionId) {
+                    sessionId = data.sessionId;
+                    localStorage.setItem('chatSessionId', sessionId);
+                    document.getElementById('sessionBadge').textContent = 'Session: ' + sessionId.substring(0, 8).toUpperCase();
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                addMessage('Sorry, I encountered an error. Please check the server is running.', 'assistant');
+            } finally {
+                sendBtn.disabled = false;
+                input.disabled = false;
+                typingIndicator.classList.remove('show');
+                input.focus();
+            }
+        }
+
+        async function clearChat() {
+            if (!confirm('Clear chat history? This cannot be undone.')) return;
+
+            try {
+                await fetch(`/api/chat/${sessionId}`, { method: 'DELETE' });
+            } catch (error) {
+                console.error('Error clearing session:', error);
+            }
+
+            sessionId = generateSessionId();
+            localStorage.setItem('chatSessionId', sessionId);
+            document.getElementById('sessionBadge').textContent = 'Session: ' + sessionId.substring(0, 8).toUpperCase();
+
+            const chatContainer = document.getElementById('chatContainer');
+            chatContainer.innerHTML = `
+                <div class="welcome-message">
+                    <h2>👋 Welcome to Incident Management</h2>
+                    <p>Your AI assistant for intelligent incident management</p>
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border-radius: 0.75rem; border: 1px solid rgba(59, 130, 246, 0.2);">
+                        <p style="font-size: 0.85rem; margin-bottom: 0.75rem; color: #93c5fd;"><strong>📝 Try these commands:</strong></p>
+                        <ul style="text-align: left; font-size: 0.8rem; color: #cbd5e1; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                            <li>📋 Show open incidents</li>
+                            <li>🔴 Show critical incidents</li>
+                            <li>✅ Show resolved incidents</li>
+                            <li>📊 Analyze incidents</li>
+                            <li>➕ Create new incident</li>
+                            <li>🔍 Find similar incidents</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        document.getElementById('messageInput').focus();
+    </script>
+</body>
+</html>

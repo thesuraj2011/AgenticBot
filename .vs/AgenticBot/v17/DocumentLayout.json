@@ -1,0 +1,1138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_detail_actions_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_detail_actions_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\services\\directactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:services\\directactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\plugins\\timeplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:plugins\\timeplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\plugins\\taskmanagerplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:plugins\\taskmanagerplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\plugins\\mathplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:plugins\\mathplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\agenticbot.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:agenticbot.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\plugins\\websearchplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:plugins\\websearchplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\plugins\\incidentmanagementplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:plugins\\incidentmanagementplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_management_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_management_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\ui_documentation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:ui_documentation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\user_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:user_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\ui_transformation_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:ui_transformation_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\ui_layout_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:ui_layout_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_agent_readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_agent_readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\complete_transformation_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:complete_transformation_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\quick_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:quick_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\file_manifest.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:file_manifest.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:documentation_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\final_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:final_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\final_checklist.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:final_checklist.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\before_and_after.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:before_and_after.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\services\\externalincidentapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:services\\externalincidentapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\api_integration_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:api_integration_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\api_integration_testing.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:api_integration_testing.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\api_integration_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:api_integration_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\api_integration_architecture.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:api_integration_architecture.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\api_integration_readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:api_integration_readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\api_integration_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:api_integration_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\error_resolution_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:error_resolution_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\error_resolution_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:error_resolution_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\final_error_resolution.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:final_error_resolution.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\quick_fix_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:quick_fix_reference.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_selection_feature.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_selection_feature.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_selection_quick_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_selection_quick_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_selection_implementation_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_selection_implementation_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_selection_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_selection_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_selection_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_selection_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_selection_start_here.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_selection_start_here.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\chatbot_incident_style_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:chatbot_incident_style_implementation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\chatbot_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:chatbot_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\chatbot_quick_start.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:chatbot_quick_start.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\english_translation_and_smart_actions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:english_translation_and_smart_actions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\smart_incidents_quick_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:smart_incidents_quick_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\smart_incidents_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:smart_incidents_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\smart_english_incidents_final_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:smart_english_incidents_final_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_actions_quick_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_actions_quick_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_detail_actions_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_detail_actions_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\incident_detail_actions_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:incident_detail_actions_visual_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_redesign.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_redesign.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_visual_examples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_visual_examples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_quick_start.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_quick_start.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_complete.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_technical_diagrams.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_technical_diagrams.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_final_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_final_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_verification.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_verification.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_executive_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_executive_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\professional_chatbot_ui_one_page_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:professional_chatbot_ui_one_page_summary.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|c:\\users\\suraj\\source\\repos\\agenticbot\\00_start_here.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{B0D21003-D5AD-E7C5-6067-D97D40BC94FB}|AgenticBot.csproj|solutionrelative:00_start_here.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "00_START_HERE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\00_START_HERE.md",
+              "RelativeDocumentMoniker": "00_START_HERE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\00_START_HERE.md",
+              "RelativeToolTip": "00_START_HERE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:50:59.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "PROFESSIONAL_CHATBOT_UI_EXECUTIVE_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_EXECUTIVE_SUMMARY.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_EXECUTIVE_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_EXECUTIVE_SUMMARY.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_EXECUTIVE_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:48:51.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "PROFESSIONAL_CHATBOT_UI_REDESIGN.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_REDESIGN.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_REDESIGN.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_REDESIGN.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_REDESIGN.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:43:34.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "INCIDENT_DETAIL_ACTIONS_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_DETAIL_ACTIONS_GUIDE.md",
+              "RelativeDocumentMoniker": "INCIDENT_DETAIL_ACTIONS_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_DETAIL_ACTIONS_GUIDE.md",
+              "RelativeToolTip": "INCIDENT_DETAIL_ACTIONS_GUIDE.md",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAPIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T10:06:43.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T18:33:52.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PROFESSIONAL_CHATBOT_UI_ONE_PAGE_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_ONE_PAGE_SUMMARY.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_ONE_PAGE_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_ONE_PAGE_SUMMARY.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_ONE_PAGE_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:49:34.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "PROFESSIONAL_CHATBOT_UI_VISUAL_EXAMPLES.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_VISUAL_EXAMPLES.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_VISUAL_EXAMPLES.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_VISUAL_EXAMPLES.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_VISUAL_EXAMPLES.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:44:07.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "PROFESSIONAL_CHATBOT_UI_QUICK_START.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_QUICK_START.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_QUICK_START.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_QUICK_START.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_QUICK_START.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:44:36.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PROFESSIONAL_CHATBOT_UI_COMPLETE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_COMPLETE.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_COMPLETE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_COMPLETE.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_COMPLETE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:45:08.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "PROFESSIONAL_CHATBOT_UI_VERIFICATION.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_VERIFICATION.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_VERIFICATION.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_VERIFICATION.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_VERIFICATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:48:15.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "PROFESSIONAL_CHATBOT_UI_FINAL_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_FINAL_SUMMARY.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_FINAL_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_FINAL_SUMMARY.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_FINAL_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:47:33.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PROFESSIONAL_CHATBOT_UI_INDEX.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_INDEX.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_INDEX.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_INDEX.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:46:42.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "PROFESSIONAL_CHATBOT_UI_TECHNICAL_DIAGRAMS.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_TECHNICAL_DIAGRAMS.md",
+              "RelativeDocumentMoniker": "PROFESSIONAL_CHATBOT_UI_TECHNICAL_DIAGRAMS.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\PROFESSIONAL_CHATBOT_UI_TECHNICAL_DIAGRAMS.md",
+              "RelativeToolTip": "PROFESSIONAL_CHATBOT_UI_TECHNICAL_DIAGRAMS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T11:45:46.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "INCIDENT_ACTIONS_QUICK_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_ACTIONS_QUICK_GUIDE.md",
+              "RelativeDocumentMoniker": "INCIDENT_ACTIONS_QUICK_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_ACTIONS_QUICK_GUIDE.md",
+              "RelativeToolTip": "INCIDENT_ACTIONS_QUICK_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T10:07:15.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "INCIDENT_DETAIL_ACTIONS_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_DETAIL_ACTIONS_SUMMARY.md",
+              "RelativeDocumentMoniker": "INCIDENT_DETAIL_ACTIONS_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_DETAIL_ACTIONS_SUMMARY.md",
+              "RelativeToolTip": "INCIDENT_DETAIL_ACTIONS_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T10:07:53.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "INCIDENT_DETAIL_ACTIONS_VISUAL_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_DETAIL_ACTIONS_VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "INCIDENT_DETAIL_ACTIONS_VISUAL_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_DETAIL_ACTIONS_VISUAL_GUIDE.md",
+              "RelativeToolTip": "INCIDENT_DETAIL_ACTIONS_VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T10:08:33.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ENGLISH_TRANSLATION_AND_SMART_ACTIONS.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\ENGLISH_TRANSLATION_AND_SMART_ACTIONS.md",
+              "RelativeDocumentMoniker": "ENGLISH_TRANSLATION_AND_SMART_ACTIONS.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\ENGLISH_TRANSLATION_AND_SMART_ACTIONS.md",
+              "RelativeToolTip": "ENGLISH_TRANSLATION_AND_SMART_ACTIONS.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T09:48:45.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "SMART_INCIDENTS_QUICK_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\SMART_INCIDENTS_QUICK_GUIDE.md",
+              "RelativeDocumentMoniker": "SMART_INCIDENTS_QUICK_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\SMART_INCIDENTS_QUICK_GUIDE.md",
+              "RelativeToolTip": "SMART_INCIDENTS_QUICK_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T09:49:11.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "SMART_INCIDENTS_VISUAL_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\SMART_INCIDENTS_VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "SMART_INCIDENTS_VISUAL_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\SMART_INCIDENTS_VISUAL_GUIDE.md",
+              "RelativeToolTip": "SMART_INCIDENTS_VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T09:49:53.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SMART_ENGLISH_INCIDENTS_FINAL_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\SMART_ENGLISH_INCIDENTS_FINAL_SUMMARY.md",
+              "RelativeDocumentMoniker": "SMART_ENGLISH_INCIDENTS_FINAL_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\SMART_ENGLISH_INCIDENTS_FINAL_SUMMARY.md",
+              "RelativeToolTip": "SMART_ENGLISH_INCIDENTS_FINAL_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T09:50:31.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "INCIDENT_SELECTION_FEATURE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_FEATURE.md",
+              "RelativeDocumentMoniker": "INCIDENT_SELECTION_FEATURE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_FEATURE.md",
+              "RelativeToolTip": "INCIDENT_SELECTION_FEATURE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:55:07.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CHATBOT_INCIDENT_STYLE_IMPLEMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\CHATBOT_INCIDENT_STYLE_IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "CHATBOT_INCIDENT_STYLE_IMPLEMENTATION.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\CHATBOT_INCIDENT_STYLE_IMPLEMENTATION.md",
+              "RelativeToolTip": "CHATBOT_INCIDENT_STYLE_IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T08:36:01.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CHATBOT_VISUAL_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\CHATBOT_VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "CHATBOT_VISUAL_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\CHATBOT_VISUAL_GUIDE.md",
+              "RelativeToolTip": "CHATBOT_VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T08:36:36.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CHATBOT_QUICK_START.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\CHATBOT_QUICK_START.md",
+              "RelativeDocumentMoniker": "CHATBOT_QUICK_START.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\CHATBOT_QUICK_START.md",
+              "RelativeToolTip": "CHATBOT_QUICK_START.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T08:36:55.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "INCIDENT_SELECTION_QUICK_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_QUICK_GUIDE.md",
+              "RelativeDocumentMoniker": "INCIDENT_SELECTION_QUICK_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_QUICK_GUIDE.md",
+              "RelativeToolTip": "INCIDENT_SELECTION_QUICK_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:55:35.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Controllers\\ChatController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:27:29.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AgentService.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Services\\AgentService.cs",
+              "RelativeDocumentMoniker": "Services\\AgentService.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Services\\AgentService.cs",
+              "RelativeToolTip": "Services\\AgentService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwDQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:27:16.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAgFAAAAAAAAAAAAADUEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-27T19:28:59.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "INCIDENT_SELECTION_IMPLEMENTATION_COMPLETE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_IMPLEMENTATION_COMPLETE.md",
+              "RelativeDocumentMoniker": "INCIDENT_SELECTION_IMPLEMENTATION_COMPLETE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_IMPLEMENTATION_COMPLETE.md",
+              "RelativeToolTip": "INCIDENT_SELECTION_IMPLEMENTATION_COMPLETE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:56:59.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "INCIDENT_SELECTION_VISUAL_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_VISUAL_GUIDE.md",
+              "RelativeDocumentMoniker": "INCIDENT_SELECTION_VISUAL_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_VISUAL_GUIDE.md",
+              "RelativeToolTip": "INCIDENT_SELECTION_VISUAL_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:57:47.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "INCIDENT_SELECTION_START_HERE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_START_HERE.md",
+              "RelativeDocumentMoniker": "INCIDENT_SELECTION_START_HERE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_START_HERE.md",
+              "RelativeToolTip": "INCIDENT_SELECTION_START_HERE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:59:12.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "INCIDENT_SELECTION_COMPLETE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_COMPLETE.md",
+              "RelativeDocumentMoniker": "INCIDENT_SELECTION_COMPLETE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_SELECTION_COMPLETE.md",
+              "RelativeToolTip": "INCIDENT_SELECTION_COMPLETE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:58:49.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ERROR_RESOLUTION_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\ERROR_RESOLUTION_GUIDE.md",
+              "RelativeDocumentMoniker": "ERROR_RESOLUTION_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\ERROR_RESOLUTION_GUIDE.md",
+              "RelativeToolTip": "ERROR_RESOLUTION_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:37:00.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ERROR_RESOLUTION_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\ERROR_RESOLUTION_SUMMARY.md",
+              "RelativeDocumentMoniker": "ERROR_RESOLUTION_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\ERROR_RESOLUTION_SUMMARY.md",
+              "RelativeToolTip": "ERROR_RESOLUTION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:37:58.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FINAL_ERROR_RESOLUTION.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FINAL_ERROR_RESOLUTION.md",
+              "RelativeDocumentMoniker": "FINAL_ERROR_RESOLUTION.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FINAL_ERROR_RESOLUTION.md",
+              "RelativeToolTip": "FINAL_ERROR_RESOLUTION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:39:09.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "QUICK_FIX_REFERENCE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\QUICK_FIX_REFERENCE.md",
+              "RelativeDocumentMoniker": "QUICK_FIX_REFERENCE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\QUICK_FIX_REFERENCE.md",
+              "RelativeToolTip": "QUICK_FIX_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:39:22.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ExternalIncidentApiService.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Services\\ExternalIncidentApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ExternalIncidentApiService.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Services\\ExternalIncidentApiService.cs",
+              "RelativeToolTip": "Services\\ExternalIncidentApiService.cs",
+              "ViewState": "AgIAAG0BAAAAAAAAAABfwHEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:14:55.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "API_INTEGRATION_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_GUIDE.md",
+              "RelativeDocumentMoniker": "API_INTEGRATION_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_GUIDE.md",
+              "RelativeToolTip": "API_INTEGRATION_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:20:41.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "API_INTEGRATION_TESTING.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_TESTING.md",
+              "RelativeDocumentMoniker": "API_INTEGRATION_TESTING.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_TESTING.md",
+              "RelativeToolTip": "API_INTEGRATION_TESTING.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:21:26.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DirectActionService.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Services\\DirectActionService.cs",
+              "RelativeDocumentMoniker": "Services\\DirectActionService.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Services\\DirectActionService.cs",
+              "RelativeToolTip": "Services\\DirectActionService.cs",
+              "ViewState": "AgIAANsBAAAAAAAAAAAUwPIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T19:04:36.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "API_INTEGRATION_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "API_INTEGRATION_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_SUMMARY.md",
+              "RelativeToolTip": "API_INTEGRATION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:22:05.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "API_INTEGRATION_INDEX.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_INDEX.md",
+              "RelativeDocumentMoniker": "API_INTEGRATION_INDEX.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_INDEX.md",
+              "RelativeToolTip": "API_INTEGRATION_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:25:32.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "API_INTEGRATION_README.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_README.md",
+              "RelativeDocumentMoniker": "API_INTEGRATION_README.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_README.md",
+              "RelativeToolTip": "API_INTEGRATION_README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:24:51.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "API_INTEGRATION_ARCHITECTURE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_ARCHITECTURE.md",
+              "RelativeDocumentMoniker": "API_INTEGRATION_ARCHITECTURE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\API_INTEGRATION_ARCHITECTURE.md",
+              "RelativeToolTip": "API_INTEGRATION_ARCHITECTURE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:24:04.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "USER_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\USER_GUIDE.md",
+              "RelativeDocumentMoniker": "USER_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\USER_GUIDE.md",
+              "RelativeToolTip": "USER_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T06:58:50.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UI_TRANSFORMATION_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\UI_TRANSFORMATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "UI_TRANSFORMATION_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\UI_TRANSFORMATION_SUMMARY.md",
+              "RelativeToolTip": "UI_TRANSFORMATION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T06:59:17.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UI_LAYOUT_GUIDE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\UI_LAYOUT_GUIDE.md",
+              "RelativeDocumentMoniker": "UI_LAYOUT_GUIDE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\UI_LAYOUT_GUIDE.md",
+              "RelativeToolTip": "UI_LAYOUT_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T06:59:50.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "INCIDENT_AGENT_README.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_AGENT_README.md",
+              "RelativeDocumentMoniker": "INCIDENT_AGENT_README.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_AGENT_README.md",
+              "RelativeToolTip": "INCIDENT_AGENT_README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:00:46.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QUICK_REFERENCE.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\QUICK_REFERENCE.md",
+              "RelativeDocumentMoniker": "QUICK_REFERENCE.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\QUICK_REFERENCE.md",
+              "RelativeToolTip": "QUICK_REFERENCE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:02:12.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BEFORE_AND_AFTER.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\BEFORE_AND_AFTER.md",
+              "RelativeDocumentMoniker": "BEFORE_AND_AFTER.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\BEFORE_AND_AFTER.md",
+              "RelativeToolTip": "BEFORE_AND_AFTER.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:06:10.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FINAL_CHECKLIST.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FINAL_CHECKLIST.md",
+              "RelativeDocumentMoniker": "FINAL_CHECKLIST.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FINAL_CHECKLIST.md",
+              "RelativeToolTip": "FINAL_CHECKLIST.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:05:15.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FINAL_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FINAL_SUMMARY.md",
+              "RelativeDocumentMoniker": "FINAL_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FINAL_SUMMARY.md",
+              "RelativeToolTip": "FINAL_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:04:14.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DOCUMENTATION_INDEX.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\DOCUMENTATION_INDEX.md",
+              "RelativeDocumentMoniker": "DOCUMENTATION_INDEX.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\DOCUMENTATION_INDEX.md",
+              "RelativeToolTip": "DOCUMENTATION_INDEX.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:03:41.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FILE_MANIFEST.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FILE_MANIFEST.md",
+              "RelativeDocumentMoniker": "FILE_MANIFEST.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\FILE_MANIFEST.md",
+              "RelativeToolTip": "FILE_MANIFEST.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:02:50.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "COMPLETE_TRANSFORMATION_SUMMARY.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\COMPLETE_TRANSFORMATION_SUMMARY.md",
+              "RelativeDocumentMoniker": "COMPLETE_TRANSFORMATION_SUMMARY.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\COMPLETE_TRANSFORMATION_SUMMARY.md",
+              "RelativeToolTip": "COMPLETE_TRANSFORMATION_SUMMARY.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:01:24.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UI_DOCUMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\UI_DOCUMENTATION.md",
+              "RelativeDocumentMoniker": "UI_DOCUMENTATION.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\UI_DOCUMENTATION.md",
+              "RelativeToolTip": "UI_DOCUMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T06:58:22.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IncidentManagementPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\IncidentManagementPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\IncidentManagementPlugin.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\IncidentManagementPlugin.cs",
+              "RelativeToolTip": "Plugins\\IncidentManagementPlugin.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAABBwBcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T06:48:22.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "INCIDENT_MANAGEMENT_IMPLEMENTATION.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_MANAGEMENT_IMPLEMENTATION.md",
+              "RelativeDocumentMoniker": "INCIDENT_MANAGEMENT_IMPLEMENTATION.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\INCIDENT_MANAGEMENT_IMPLEMENTATION.md",
+              "RelativeToolTip": "INCIDENT_MANAGEMENT_IMPLEMENTATION.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T06:50:07.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-27T19:31:23.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaskManagerPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\TaskManagerPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\TaskManagerPlugin.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\TaskManagerPlugin.cs",
+              "RelativeToolTip": "Plugins\\TaskManagerPlugin.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:26:55.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WebSearchPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\WebSearchPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\WebSearchPlugin.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\WebSearchPlugin.cs",
+              "RelativeToolTip": "Plugins\\WebSearchPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:26:35.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MathPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\MathPlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\MathPlugin.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\MathPlugin.cs",
+              "RelativeToolTip": "Plugins\\MathPlugin.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:26:21.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TimePlugin.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\TimePlugin.cs",
+              "RelativeDocumentMoniker": "Plugins\\TimePlugin.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Plugins\\TimePlugin.cs",
+              "RelativeToolTip": "Plugins\\TimePlugin.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:26:10.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Models\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "Models\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\Models\\ChatMessage.cs",
+              "RelativeToolTip": "Models\\ChatMessage.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAIBXwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:25:46.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AgenticBot",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\AgenticBot.csproj",
+              "RelativeDocumentMoniker": "AgenticBot.csproj",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\AgenticBot.csproj",
+              "RelativeToolTip": "AgenticBot.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T18:57:48.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\suraj\\source\\repos\\AgenticBot\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T18:59:30.155Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

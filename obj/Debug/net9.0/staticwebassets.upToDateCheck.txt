@@ -1,0 +1,2 @@
+wwwroot\index.html
+C:\Users\suraj\source\repos\AgenticBot\wwwroot\index.html
